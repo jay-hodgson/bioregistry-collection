@@ -486,11 +486,11 @@ export const bioregistryRules = [
     onMatch,
   },
   {
-    regex: /(mesh:(?:C|D|M)\d{6,9})/,
+    regex: /(mesh:(?:C|D|Q)\d+)/,
     onMatch,
   },
   {
-    regex: /(metabolights:MTBLS\d+)/,
+    regex: /(metabolights:MTBL[CS]\d+)/,
     onMatch,
   },
   {
@@ -758,6 +758,10 @@ export const bioregistryRules = [
     onMatch,
   },
   {
+    regex: /(tcia.collection:[A-Za-z0-9][A-Za-z0-9_\-\.]*[A-Za-z0-9])/,
+    onMatch,
+  },
+  {
     regex: /(uberon:\d+)/,
     onMatch,
   },
@@ -770,7 +774,7 @@ export const bioregistryRules = [
     onMatch,
   },
   {
-    regex: /(uniprot:(?:(?:[A-N,R-Z][0-9](?:[A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|(?:[O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(?:\.\d+)?))/,
+    regex: /(uniprot:(?:(?:[A-N,R-Z][0-9](?:[A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|(?:[O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(?:\.\d+)?(?:-\d+)?(?:#PRO_\d+)?))/,
     onMatch,
   },
   {

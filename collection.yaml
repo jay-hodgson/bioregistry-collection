@@ -201,6 +201,7 @@
   - string
   - tao
   - tcdb
+  - tcia.collection
   - uberon
   - unii
   - uniparc
