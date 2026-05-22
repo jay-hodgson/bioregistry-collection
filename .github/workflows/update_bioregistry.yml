@@ -1,7 +1,7 @@
 name: Validate Bioregistry Rules
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
   workflow_dispatch:
@@ -13,6 +13,8 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
