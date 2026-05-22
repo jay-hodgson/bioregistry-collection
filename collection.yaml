@@ -77,8 +77,6 @@
   - ec
   - ecacc
   - edam
-  - edam.data
-  - edam.topic
   - ega.dataset
   - ega.study
   - emdb
